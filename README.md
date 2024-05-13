@@ -1,0 +1,2 @@
+# tugasnumberik
+ tugas numberik gausss
