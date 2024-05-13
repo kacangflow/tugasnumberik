@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gauss Seidal</title>
+    <link rel="shortcut icon" href="./img/adi.png"/>
+    <link rel="stylesheet" href="./css/gauss-seidal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gauss Seidal</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Input</h3>
+                <div class="table-input">
+                    <table class="table" id="soal">
+                        <thead>
+                            <tr>
+                                <th class="name"></th>
+                                <th>X</th>
+                                <th>Y</th>
+                                <th>Z</th>
+                                <th>B</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><input type="number" step="any" value="4" /></td>
+                                <td><input type="number" step="any" value="-1" /></td>
+                                <td><input type="number" step="any" value="1" /></td>
+                                <td><input type="number" step="any" value="7" /></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><input type="number" step="any" value="4" /></td>
+                                <td><input type="number" step="any" value="-8" /></td>
+                                <td><input type="number" step="any" value="1" /></td>
+                                <td><input type="number" step="any" value="-21" /></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><input type="number" step="any" value="-2" /></td>
+                                <td><input type="number" step="any" value="1" /></td>
+                                <td><input type="number" step="any" value="5" /></td>
+                                <td><input type="number" step="any" value="15" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Toleransi</h3>
+                <input type="number" id="toleransi" value="1"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Nilai Awal</h3>
+                <div class="table-responsive nilai-awal">
+                    <table class="table nilai-awal">
+                        <tbody>
+                            <tr>
+                                <td><input type="number" value="1"/></td>
+                                <td><input type="number" value="2"/></td>
+                                <td><input type="number" value="2"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;display: block;text-align: center;">
+            <button type="button" class="btn btn-success" id="hitungButton" style="width: 49%;display: inline-block;" data-action="hitung" >Hitung</button>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Hasil</h3>
+                <div id="result3" class="jumbotron"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Adi Prasetiyo</p>
+    </footer>
+    <script src="./js/gauss-seidal.js"></script>
+</body>
+</html>
